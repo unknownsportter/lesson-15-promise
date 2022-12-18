@@ -1,6 +1,7 @@
 //random user Q*)
 
 // const newBtn = document.createElement('button');
+// let btnClicks = 0;
 
 // async function getUser() {
 //     try {
@@ -8,7 +9,12 @@
 //         const fetchResult = await fetchUser.json();
 //         fetchResult.results.forEach(function (item) {
 //             newBtn.innerText = 'random user';
+//             // let btnClicks = 0;
+
 //             newBtn.addEventListener('click', function (event) {
+//                 btnClicks++;
+//                 console.log(btnClicks);
+
 //                 for (key in item) {
 //                     const p = document.createElement('p');
 //                     if (
@@ -37,15 +43,20 @@
 //                         img.src = item.picture.medium;
 //                         document.body.appendChild(img);
 //                     }
+//                     if (btnClicks > 1) {
+//                         window.location.reload();
+//                         btnClicks = 0;
+//                     }
 //                 }
 //             });
 //             document.body.appendChild(newBtn);
-//             console.log(item);
+//             // console.log(item);
 //         });
 //     } catch (error) {
 //         console.log(error);
 //     }
 // }
+
 // getUser();
 
 //1.1*)
