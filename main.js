@@ -86,7 +86,7 @@
 //                 li.innerText = item.title;
 //             }
 //         });
-//         console.log(anser);
+//         // console.log(anser);
 //     })
 //     .catch(function (error) {
 //         console.log(error + ': THIS is the error');
@@ -283,7 +283,6 @@
 //                             newImgs.src = item.url;
 //                             newImgs.style.width = '300px';
 //                             newImgs.style.height = '300px';
-
 //                             const oldImgs = document.querySelector('img');
 //                             document.body.removeChild(oldImgs);
 //                             document.body.appendChild(newImgs);
@@ -306,7 +305,6 @@
 
 //5*)
 
-//
 // async function getCats() {
 //     try {
 //         const fetchCats = await fetch('https://api.thecatapi.com/v1/breeds');
@@ -325,7 +323,7 @@
 
 //         newSelect.addEventListener('change', function (event) {
 //             const breedId = event.target.value;
-//             async function getOneCat(getCats) {
+//             async function getOneCat() {
 //                 // console.log(breedId);
 //                 try {
 //                     const fetchOneRace = await fetch(
@@ -334,6 +332,10 @@
 //                     );
 //                     const fetchOneRaceResults = await fetchOneRace.json();
 //                     const catImg = document.createElement('img');
+//                     const lastCatImg = document.querySelector('img');
+//                     if (lastCatImg) {
+//                         document.body.removeChild(lastCatImg);
+//                     }
 //                     // console.log(fetchOneRaceResults);
 //                     catImg.src = fetchOneRaceResults[0].url;
 //                     catImg.style.width = '200px';
@@ -349,4 +351,5 @@
 //         console.log(error, 'This is the ERROR 1');
 //     }
 // }
+
 // getCats();
